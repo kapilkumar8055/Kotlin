@@ -12,6 +12,7 @@ fun main() {
      */
 
     val num = 5
+
     if (num < 0 || num > 0) {
         println("Number is non-zero")
     } else {
