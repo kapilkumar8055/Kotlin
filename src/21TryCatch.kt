@@ -30,7 +30,7 @@ fun main(){
     //Null Exception
     val s: String? =null                //Without ? we can't store null to the string
     println(s)
-    println(s?.length)
+    println(s?.length)                     // ?.--this is safe call
     println(s?.length ?: "This is null")     //   ?:-this is Elvis Operator
     val array1= arrayOf(1,2,3,null,4,null,5,null)
     println(array1.contentToString())
