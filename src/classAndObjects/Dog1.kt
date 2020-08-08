@@ -7,9 +7,10 @@ package classAndObjects
  **/
 class Dog1(var name: String, var age: Int) {
 
-    var ownerName :String? =null
-    constructor(name: String,age: Int,ownerName :String):this(name,age){
-        this.ownerName=ownerName
+    var ownerName: String? = null
+
+    constructor(name: String, age: Int, ownerName: String) : this(name, age) {
+        this.ownerName = ownerName
     }
 
     fun eat() {
@@ -20,17 +21,18 @@ class Dog1(var name: String, var age: Int) {
         println("$name barks!!")
     }
 
-    fun info(){
+    fun info() {
         println("Owner name : $ownerName\nDog name : $name")
     }
 }
-fun main(){
-    var dog=Dog1("kitu",8)                      //using primary constructor
+
+fun main() {
+    var dog = Dog1("kitu", 8)                      //using primary constructor
     dog.bark()
     dog.eat()
     dog.info()
 
-    var dog1=Dog1("bhura",12,"Amit")          //using primary constructor and Secondary constructor
+    var dog1 = Dog1("bhura", 12, "Amit")          //using primary constructor and Secondary constructor
     dog1.bark()
     dog1.eat()
     dog1.info()
